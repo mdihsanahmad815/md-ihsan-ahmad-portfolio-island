@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Md Ihsan Ahmad | Portfolio Island</title>
+<meta name="description" content="Md Ihsan Ahmad | Portfolio Island — a drivable game-style portfolio world.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loading"><div class="loader-logo">MD IHSAN AHMAD</div><div class="loader-sub">PORTFOLIO ISLAND</div><div class="loader-bar"><i></i></div><small>LOADING WORLD...</small></div>
+<div id="game"></div>
+<div class="hud top">
+  <div class="profile"><img src="assets/ihsan-character.png"><div><b>Md Ihsan Ahmad</b><span>Lv. 10 · Designer | Developer | Creator</span></div></div>
+  <div class="brand">MD <strong>IHSAN AHMAD</strong><small>PORTFOLIO ISLAND</small></div>
+  <div class="stats"><span>🪙 <b>2024</b></span><span>💎 <b>100K+</b></span><span>WORLD 01</span><button id="menu">☰</button></div>
+</div>
+<div class="left-nav"><button class="active" data-go="start">⌂ <span>MAP</span></button><button data-go="about">● <span>ABOUT ME</span></button><button data-go="skills">✦ <span>SKILLS</span></button><button data-go="projects">▣ <span>PROJECTS</span></button><button data-go="services">⚒ <span>SERVICES</span></button><button data-go="contact">✉ <span>CONTACT</span></button></div>
+<div class="minimap"><b>WORLD MAP</b><canvas id="map" width="190" height="190"></canvas></div>
+<div class="speed"><span id="speed">0</span><small>KM/H</small><i id="boostbar"></i></div>
+<div class="hint" id="hint">Drive to a location · <b>E</b> ENTER</div>
+<div class="controls desktop"><kbd>W A S D</kbd> MOVE <kbd>E</kbd> ENTER <kbd>SPACE</kbd> BOOST <kbd>SHIFT</kbd> SPRINT</div>
+<div class="mobile-ui"><div id="joy" class="joy"><i></i></div><div class="actions"><button id="drive">🚗<small>DRIVE</small></button><button id="enter">E<small>ENTER</small></button><button id="jump">↑<small>JUMP</small></button><button id="boost">⚡<small>BOOST</small></button></div></div>
+<div id="panel" class="panel hidden"><button id="close">×</button><div id="panelBody"></div></div>
+<div id="startScreen" class="start-screen"><div class="start-card"><div class="eyebrow">WELCOME TO YOUR DIGITAL WORLD</div><h1>MD IHSAN<br><em>AHMAD</em></h1><p>Drive, explore and discover my portfolio island. Visit every zone and unlock my story, skills, projects, services and contact.</p><button id="start">START EXPLORING <span>▶</span></button><small>PHONE: TOUCH JOYSTICK · DESKTOP: WASD</small></div></div>
+<script type="module" src="script.js"></script>
+</body>
+</html>
